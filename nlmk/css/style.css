@@ -1737,10 +1737,11 @@ footer .footer__contacts_socials svg path {
 
 .news__list_item_image {
   height: 100%;
-  width: 45%;
+  width: 50%;
 }
 
 .news__list_item_content {
+  width: 50%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
