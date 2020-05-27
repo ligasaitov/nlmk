@@ -124,7 +124,7 @@ h6 {
 }
 
 body {
-  background: #E5E5E5;
+  background: #f6f6f6;
   color: #002647;
   font-size: 16px;
 }
@@ -925,7 +925,7 @@ body.ie .ibg img {
 .header {
   height: 70px;
   width: 100%;
-  background: #E5E5E5;
+  background: #f6f6f6;
   position: fixed;
   opacity: 1;
   top: 0;
