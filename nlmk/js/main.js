@@ -1016,9 +1016,10 @@ var typedTitle = new Typed('#main-typed-title', {
     stringsElement: '#typed-strings-title',
     // loop: true,
     typeSpeed: 75,
-    // backSpeed: 20,
-    // backDelay: 1000,
-    showCursor: false,
+    backSpeed: 150,
+    backDelay: 1000,
+    // showCursor: true,
+    // autoInsertCss: true,
   });
 
 // var typedSubtitle = new Typed('#main-typed-subtitle', {
