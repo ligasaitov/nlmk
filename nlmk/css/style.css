@@ -1945,7 +1945,6 @@ footer .footer__contacts_socials svg path {
           flex: 0 0 66.667%;
   max-width: 770px;
   max-height: 320px;
-  padding: 0px 0px 0px 20px;
 }
 
 .section__news_item.big-news .section__news_item_image img {
@@ -2556,6 +2555,30 @@ footer .footer__contacts_socials svg path {
 .form__subscribe_block form .form-button button:hover {
   color: #2C5697;
   background: #FFFFFF;
+}
+
+.news__nav_item_content_meta div:not(:last-child),
+.news__list_item_content_meta div:not(:last-child),
+.section__news_item_content_meta div:not(:last-child),
+.slider__mini_item_meta div:not(:last-child),
+.news_inter_item_content_meta div:not(:last-child),
+.video_slider_elem_meta div:not(:last-child) {
+  position: relative;
+}
+
+.news__nav_item_content_meta div:not(:last-child):after,
+.news__list_item_content_meta div:not(:last-child):after,
+.section__news_item_content_meta div:not(:last-child):after,
+.slider__mini_item_meta div:not(:last-child):after,
+.news_inter_item_content_meta div:not(:last-child):after,
+.video_slider_elem_meta div:not(:last-child):after {
+  content: '';
+  width: 1px;
+  height: 9px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
 
 @media (max-width: 1182px) {
