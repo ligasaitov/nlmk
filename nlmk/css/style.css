@@ -1552,6 +1552,7 @@ footer .footer__contacts_socials svg path {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 10px;
+  overflow: hidden;
 }
 
 .main__news_item:nth-child(2),
@@ -1566,9 +1567,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .main__news_item:hover .main__news_item_subtitle {
-  -webkit-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
+  opacity: 1;
 }
 
 .main__news_item_title {
@@ -1592,12 +1591,7 @@ footer .footer__contacts_socials svg path {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform: scaleY(0);
-  -ms-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: top;
-      -ms-transform-origin: top;
-          transform-origin: top;
+  opacity: 0;
 }
 
 .section__slider_news {
@@ -1722,9 +1716,6 @@ footer .footer__contacts_socials svg path {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1745,9 +1736,6 @@ footer .footer__contacts_socials svg path {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
 }
 
 .news__list_item_image {
@@ -2068,6 +2056,26 @@ footer .footer__contacts_socials svg path {
   -webkit-flex: 33.333%;
       -ms-flex: 33.333%;
           flex: 33.333%;
+}
+
+.section__news_inter {
+  position: relative;
+}
+
+.section__news_inter .news_inter_arrows .slick-prev {
+  background: transparent;
+  position: absolute;
+  top: -webkit-calc(50% - 30px);
+  top: calc(50% - 30px);
+  left: -80px;
+}
+
+.section__news_inter .news_inter_arrows .slick-next {
+  background: transparent;
+  position: absolute;
+  top: -webkit-calc(50% - 30px);
+  top: calc(50% - 30px);
+  right: -80px;
 }
 
 .news_inter_item {

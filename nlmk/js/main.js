@@ -1212,6 +1212,31 @@ if($('.video_slider').length>0){
 		}]
 	});
 }
+
+// SLIDER VIDEO
+if($('.news_inter_slider').length>0){
+	$('.news_inter_slider').slick({
+		autoplay: true,
+		//infinite: false,
+		dots: false,
+		arrows: true,
+		accessibility:false,
+		// centerMode: true,
+		slidesToShow:1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		autoplaySpeed: 5000,
+		//asNavFor:'',
+		//appendDots:
+		appendArrows:$('.news_inter_arrows'),
+		nextArrow:'<button type="button" class="slick-next"><img src="img/icons/right-arrow.png"></button>',
+		prevArrow:'<button type="button" class="slick-prev"><img src="img/icons/left-arrow.png"></button>',
+		responsive: [{
+			breakpoint: 768,
+			settings: {}
+		}]
+	});
+}
 function testWebP(callback) {
 
 	var webP = new Image();
