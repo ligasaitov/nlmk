@@ -967,6 +967,15 @@ body.ie .ibg img {
   height: 61px;
 }
 
+.header__logo svg {
+  width: 86px;
+  height: 61px;
+}
+
+.header__logo svg path {
+  fill: #015293;
+}
+
 .header__menu {
   display: none;
 }
@@ -1356,6 +1365,16 @@ footer .footer__logo {
           align-items: center;
 }
 
+footer .footer__logo svg {
+  width: 86px;
+  height: 61px;
+  margin: 0px 10px 0px 0px;
+}
+
+footer .footer__logo svg path {
+  fill: #fff;
+}
+
 footer .footer__logo a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1371,10 +1390,6 @@ footer .footer__logo a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-footer .footer__logo a img {
-  margin: 0px 10px 0px 0px;
 }
 
 footer .footer__contacts {
