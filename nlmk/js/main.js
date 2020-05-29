@@ -1017,7 +1017,7 @@ if ($('#main-typed-title').length > 0) {
 }
 function digitalTyped() {
 	var typedTitle = new Typed('#main-typed-title', {
-	    stringsElement: '#typed-strings-title',
+		stringsElement: '#typed-strings-title',
 	    // loop: true,
 	    typeSpeed: 75,
 	    backSpeed: 150,
@@ -1037,7 +1037,31 @@ function digitalTyped() {
 //     // startDelay: 3500,
 //   });
 
+if ($('#player').length > 0) {
+	$("#player").jPlayer({
+		ready: function () {
+			var audio = $('#player').attr('data-track');
+			$(this).jPlayer("setMedia", {
+				mp3: audio
+			});
+		},
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		remainingDuration: false,
+		toggleDuration: true
+	});
+}
 
+// GALLERY
+if ($('.content_gallery').length > 0) {
+	baguetteBox.run('.content_gallery', {
+		// Custom options
+	});
+}
 //SLIDERS
 // if($('.mainslider').length>0){
 // 	$('.mainslider').slick({
