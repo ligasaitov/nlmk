@@ -1991,11 +1991,15 @@ footer .footer__contacts_socials svg path {
 }
 
 .main__subtitle {
+  margin: 80px 0px 0px 0px;
+}
+
+.main__subtitle p {
   font-weight: 800;
   font-size: 28px;
   line-height: 36px;
   color: #FFFFFF;
-  margin: 80px 0px 0px 0px;
+  opacity: 1;
 }
 
 .main__news {
