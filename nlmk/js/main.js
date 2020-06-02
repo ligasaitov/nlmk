@@ -1032,8 +1032,8 @@ function digitalTyped() {
 	    typeSpeed: 75,
 	    backSpeed: 150,
 	    backDelay: 1000,
-	    // showCursor: true,
-	    // autoInsertCss: true,
+	    showCursor: false,
+	    autoInsertCss: false,
 	  });
 }
 
