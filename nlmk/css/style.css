@@ -2336,6 +2336,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .section__news_item_content_title a:hover {
+  color: #2d5698;
   text-decoration: underline;
 }
 

@@ -1048,6 +1048,9 @@ function digitalTyped() {
 //   });
 
 if ($('#player').length > 0) {
+	mp3player();
+}
+function mp3player() {
 	$("#player").jPlayer({
 		ready: function () {
 			var audio = $('#player').attr('data-track');
@@ -1065,8 +1068,6 @@ if ($('#player').length > 0) {
 		toggleDuration: true
 	});
 }
-
-
 //SLIDERS
 // if($('.mainslider').length>0){
 // 	$('.mainslider').slick({
