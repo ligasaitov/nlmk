@@ -2418,6 +2418,7 @@ footer .footer__contacts_socials svg path {
       -ms-flex-align: center;
           align-items: center;
   padding: 90px 30px;
+  margin: 0px -100%;
   min-height: 400px;
   position: relative;
 }
@@ -2442,7 +2443,7 @@ footer .footer__contacts_socials svg path {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px 20px 0px 0px;
+  padding: 20px 33.333%;
   z-index: 1;
 }
 
