@@ -722,6 +722,52 @@ function searchselectreset() {
 		}
 	});
 }
+function testWebP(callback) {
+
+	var webP = new Image();
+	webP.onload = webP.onerror = function () {
+		callback(webP.height == 2);
+	};
+	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+}
+
+testWebP(function (support) {
+
+	if (support == true) {
+		document.querySelector('body').classList.add('webp');
+	}
+})
+/*
+ * Replace all SVG images with inline SVG
+ */
+jQuery('img.svg').each(function () {
+	var $img = jQuery(this);
+	var imgID = $img.attr('id');
+	var imgClass = $img.attr('class');
+	var imgURL = $img.attr('src');
+
+	jQuery.get(imgURL, function (data) {
+		// Get the SVG tag, ignore the rest
+		var $svg = jQuery(data).find('svg');
+
+		// Add replaced image's ID to the new SVG
+		if (typeof imgID !== 'undefined') {
+			$svg = $svg.attr('id', imgID);
+		}
+		// Add replaced image's classes to the new SVG
+		if (typeof imgClass !== 'undefined') {
+			$svg = $svg.attr('class', imgClass + ' replaced-svg');
+		}
+
+		// Remove any invalid XML tags as per http://validator.w3.org
+		$svg = $svg.removeAttr('xmlns:a');
+
+		// Replace image with new SVG
+		$img.replaceWith($svg);
+
+	}, 'xml');
+
+});
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
 if (isMobile.any()) { }
 
@@ -1298,50 +1344,4 @@ if($('.other_posts_slider').length>0){
 		}]
 	});
 }
-function testWebP(callback) {
-
-	var webP = new Image();
-	webP.onload = webP.onerror = function () {
-		callback(webP.height == 2);
-	};
-	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
-
-testWebP(function (support) {
-
-	if (support == true) {
-		document.querySelector('body').classList.add('webp');
-	}
-})
-/*
- * Replace all SVG images with inline SVG
- */
-jQuery('img.svg').each(function () {
-	var $img = jQuery(this);
-	var imgID = $img.attr('id');
-	var imgClass = $img.attr('class');
-	var imgURL = $img.attr('src');
-
-	jQuery.get(imgURL, function (data) {
-		// Get the SVG tag, ignore the rest
-		var $svg = jQuery(data).find('svg');
-
-		// Add replaced image's ID to the new SVG
-		if (typeof imgID !== 'undefined') {
-			$svg = $svg.attr('id', imgID);
-		}
-		// Add replaced image's classes to the new SVG
-		if (typeof imgClass !== 'undefined') {
-			$svg = $svg.attr('class', imgClass + ' replaced-svg');
-		}
-
-		// Remove any invalid XML tags as per http://validator.w3.org
-		$svg = $svg.removeAttr('xmlns:a');
-
-		// Replace image with new SVG
-		$img.replaceWith($svg);
-
-	}, 'xml');
-
-});
 });
