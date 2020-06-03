@@ -826,7 +826,7 @@ $(function () {
                     (parseInt(firstNewsItem.css('margin-bottom').replace('px', ''), 10)),
          cPadding = (parseInt($('.news-content').css('padding-top').replace('px', ''), 10)) +
                     (parseInt($('.news-content').css('padding-bottom').replace('px', ''), 10)),
-            speed = 7000,
+            speed = 5000,
           myTimer = null,
          siblings = null,
       totalHeight = null,
