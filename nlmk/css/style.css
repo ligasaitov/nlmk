@@ -1419,6 +1419,10 @@ body.ie .ibg img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1446,10 +1450,10 @@ body.ie .ibg img {
 .header__logo:after {
   content: '';
   width: 2px;
-  height: 100%;
+  height: 51px;
   background: #fff;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: -20px;
 }
 
@@ -1462,14 +1466,24 @@ body.ie .ibg img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
   margin-left: -10px;
   margin-right: 70px;
-  width: 143px;
+  width: auto;
 }
 
-.header__social a:hover svg path {
-  fill: #002647;
+.header__social svg {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__social a:hover svg {
+  opacity: 0.8;
 }
 
 .header__social_icon {
@@ -1495,6 +1509,10 @@ body.ie .ibg img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0px -20px;
   height: 100%;
   width: 337px;
@@ -1709,10 +1727,11 @@ body.ie .ibg img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1957,7 +1976,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .main_l {
-  width: 55%;
+  width: 100%;
   padding: 90px 0px 0px 0px;
   padding-bottom: -webkit-calc(50vh - 219px);
   padding-bottom: calc(50vh - 219px);
@@ -2000,8 +2019,8 @@ footer .footer__contacts_socials svg path {
 .main__title {
   font-family: 'Slabo27px';
   font-style: normal;
-  font-size: 112px;
-  line-height: 40px;
+  font-size: 125px;
+  line-height: 135зx;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -2009,9 +2028,8 @@ footer .footer__contacts_socials svg path {
 
 .main__title span {
   display: block;
-  font-size: 67px;
+  font-size: 74px;
   line-height: 84px;
-  margin: 40px 0px 0px 0px;
 }
 
 .main__subtitle {
@@ -2019,7 +2037,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .main__subtitle p {
-  font-size: 34px;
+  font-size: 38px;
   line-height: 45px;
   color: #FFFFFF;
   opacity: 1;
@@ -2050,15 +2068,12 @@ footer .footer__contacts_socials svg path {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.main__news_item:hover {
   background: -o-linear-gradient(57.72deg, rgba(66, 158, 210, 0.6) 2.98%, rgba(76, 172, 225, 0) 54.22%), rgba(44, 86, 151, 0.64);
   background: linear-gradient(32.28deg, rgba(66, 158, 210, 0.6) 2.98%, rgba(76, 172, 225, 0) 54.22%), rgba(44, 86, 151, 0.64);
 }
 
-.main__news_item:hover .main__news_item_title,
-.main__news_item:hover .main__news_item_meta {
+.main__news_item .main__news_item_title,
+.main__news_item .main__news_item_meta {
   opacity: 1;
 }
 
@@ -2091,7 +2106,11 @@ footer .footer__contacts_socials svg path {
   color: #fff !important;
 }
 
-.main__news_item_meta_name:after {
+.main__news_item_meta_time svg path {
+  fill: #fff;
+}
+
+.main__news_item_meta_time:after {
   background: rgba(255, 255, 255, 0.6) !important;
 }
 
@@ -2119,6 +2138,16 @@ footer .footer__contacts_socials svg path {
   margin: 0px -10px;
 }
 
+.meta_block > div:first-child a svg {
+  position: relative;
+  top: 5px;
+}
+
+.meta_block > div:last-child a svg {
+  position: relative;
+  top: 7px;
+}
+
 .meta_block a {
   font-size: 12px;
   line-height: 40px;
@@ -2129,11 +2158,6 @@ footer .footer__contacts_socials svg path {
 
 .meta_block a:hover {
   text-decoration: underline;
-}
-
-.meta_block a svg {
-  position: relative;
-  top: 7px;
 }
 
 .meta_block div:not(:last-child) {
@@ -2385,7 +2409,7 @@ footer .footer__contacts_socials svg path {
   text-decoration: underline;
 }
 
-.news__list_item_content_meta_name {
+.news__list_item_content_meta_time {
   display: none;
 }
 
@@ -2395,6 +2419,10 @@ footer .footer__contacts_socials svg path {
 
 .news__list_item_content_meta_comment:after {
   background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.section__news {
+  margin: 20px 0px 0px 0px;
 }
 
 .section__news_item {
@@ -2424,6 +2452,7 @@ footer .footer__contacts_socials svg path {
 
 .section__news_item_content_title {
   width: 50%;
+  padding: 0px 10px 0px 0px;
 }
 
 .section__news_item_content_title a {
@@ -2592,7 +2621,7 @@ footer .footer__contacts_socials svg path {
   height: 1px;
   width: 100%;
   background: rgba(44, 86, 151, 0.2);
-  margin: 20px 0px 10px 0px;
+  margin: 10px 0px 20px 0px;
 }
 
 .slider__mini {
@@ -2641,6 +2670,10 @@ footer .footer__contacts_socials svg path {
 
 .slider__mini_item_meta a:hover {
   text-decoration: underline;
+}
+
+.slider__mini_item_meta_time svg path {
+  fill: #fff;
 }
 
 .slider__mini_item_meta_comment svg {
@@ -2807,6 +2840,10 @@ footer .footer__contacts_socials svg path {
 
 .news_inter_item_content_meta a:hover {
   text-decoration: underline;
+}
+
+.news_inter_item_content_meta_time svg path {
+  fill: #fff;
 }
 
 .news_inter_item_content_meta_comment svg {
@@ -3292,6 +3329,10 @@ footer .footer__contacts_socials svg path {
   background: rgba(255, 255, 255, 0.2) !important;
 }
 
+.article__video_meta_time svg path {
+  fill: #fff;
+}
+
 .article__video_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3403,8 +3444,8 @@ footer .footer__contacts_socials svg path {
   content: '';
   width: 100%;
   height: 100%;
-  background: #2C5697;
-  opacity: 0.7;
+  background: -o-linear-gradient(57.72deg, rgba(66, 158, 210, 0.6) 2.98%, rgba(76, 172, 225, 0) 54.22%), rgba(44, 86, 151, 0.64);
+  background: linear-gradient(32.28deg, rgba(66, 158, 210, 0.6) 2.98%, rgba(76, 172, 225, 0) 54.22%), rgba(44, 86, 151, 0.64);
   position: absolute;
   top: 0;
   left: 0;
@@ -3419,7 +3460,7 @@ footer .footer__contacts_socials svg path {
   color: #FFFFFF;
   font-weight: 800;
   font-size: 34px;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .player {
@@ -3644,6 +3685,7 @@ footer .footer__contacts_socials svg path {
 
 .comments .form__btn {
   background: #2C5697;
+  border: 1px solid #2C5697;
   padding: 20px 50px;
   margin: 30px 0px 30px 0px;
   -webkit-transition: all 0.3s ease 0s;
