@@ -125,7 +125,7 @@ h6 {
 
 body {
   background: #fcfcfc;
-  color: #002647;
+  color: #000;
   font-size: 16px;
 }
 
@@ -151,13 +151,13 @@ svg {
 }
 
 svg path {
-  fill: #002647;
+  fill: #000;
 }
 
 p {
   font-size: 16px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
   opacity: 0.8;
   margin: 15px 0px;
 }
@@ -1977,9 +1977,7 @@ footer .footer__contacts_socials svg path {
 
 .main_l {
   width: 100%;
-  padding: 90px 0px 0px 0px;
-  padding-bottom: -webkit-calc(50vh - 219px);
-  padding-bottom: calc(50vh - 219px);
+  padding: 90px 0px 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1989,10 +1987,10 @@ footer .footer__contacts_socials svg path {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_r {
@@ -2151,7 +2149,7 @@ footer .footer__contacts_socials svg path {
 .meta_block a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   margin: 0px 10px;
 }
@@ -2257,7 +2255,7 @@ footer .footer__contacts_socials svg path {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #002647;
+  color: #000;
 }
 
 .news__nav_item_content_title a:hover {
@@ -2275,7 +2273,7 @@ footer .footer__contacts_socials svg path {
 .news__nav_item_content_meta a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   margin: 0px 15px;
 }
@@ -2459,11 +2457,11 @@ footer .footer__contacts_socials svg path {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  color: #002647;
+  color: #000;
 }
 
 .section__news_item_content_title a:hover {
-  color: #2d5698;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -2471,7 +2469,7 @@ footer .footer__contacts_socials svg path {
   width: 50%;
   font-size: 16px;
   line-height: 24px;
-  color: #002647;
+  color: #000;
   opacity: 0.8;
   padding: 0px 10px;
   pointer-events: none;
@@ -2492,7 +2490,7 @@ footer .footer__contacts_socials svg path {
 .section__news_item_content_meta a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   margin: 0px 15px;
 }
@@ -2626,7 +2624,7 @@ footer .footer__contacts_socials svg path {
 
 .slider__mini {
   margin: 30px 0px 0px 0px;
-  background: #fff;
+  background: #2d5698;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
   padding: 5px 30px;
@@ -2645,7 +2643,7 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 24px;
   line-height: 30px;
-  color: #002647;
+  color: #fff;
 }
 
 .slider__mini_item_title a:hover {
@@ -2663,7 +2661,7 @@ footer .footer__contacts_socials svg path {
 .slider__mini_item_meta a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647 !important;
+  color: #fff !important;
   opacity: 0.6;
   margin: 0px 15px;
 }
@@ -2673,7 +2671,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .slider__mini_item_meta_time svg path {
-  fill: #002647;
+  fill: #fff;
 }
 
 .slider__mini_item_meta_comment svg {
@@ -2682,7 +2680,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .slider__mini_item_meta_comment svg path {
-  fill: #002647;
+  fill: #fff;
   opacity: 0.3;
 }
 
@@ -2764,7 +2762,7 @@ footer .footer__contacts_socials svg path {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #fff;
+  background: #2d5698;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
 }
@@ -2799,18 +2797,18 @@ footer .footer__contacts_socials svg path {
   line-height: 24px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
+  color: #2d5698;
   padding: 6px 12px 4px 12px;
-  background: #2d5698;
-  border: 1px solid #2d5698;
+  background: #fff;
+  border: 1px solid #fff;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .news_inter_item_content_subtitle a:hover {
-  background: #fff;
-  color: #2d5698;
+  background: #2d5698;
+  color: #fff;
 }
 
 .news_inter_item_content_title {
@@ -2821,7 +2819,7 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
-  color: #002647;
+  color: #fff;
 }
 
 .news_inter_item_content_title a:hover {
@@ -2839,7 +2837,7 @@ footer .footer__contacts_socials svg path {
 .news_inter_item_content_meta a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647 !important;
+  color: #fff !important;
   opacity: 0.6;
   margin: 0px 15px;
 }
@@ -2849,7 +2847,7 @@ footer .footer__contacts_socials svg path {
 }
 
 .news_inter_item_content_meta_time svg path {
-  fill: #002647;
+  fill: #fff;
 }
 
 .news_inter_item_content_meta_comment svg {
@@ -2858,14 +2856,14 @@ footer .footer__contacts_socials svg path {
 }
 
 .news_inter_item_content_meta_comment svg path {
-  fill: #002647;
+  fill: #fff;
   opacity: 0.3;
 }
 
 .news_inter_item_content_text {
   font-size: 16px;
   line-height: 24px;
-  color: #002647;
+  color: #fff;
   opacity: 0.8;
 }
 
@@ -3111,7 +3109,7 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
-  color: #002647;
+  color: #000;
 }
 
 .video_slider_item_right .video_slider_elem .video_slider_elem_title a:hover {
@@ -3129,7 +3127,7 @@ footer .footer__contacts_socials svg path {
 .video_slider_item_right .video_slider_elem .video_slider_elem_meta a {
   font-size: 12px;
   line-height: 40px;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   margin: 0px 15px;
 }
@@ -3160,13 +3158,13 @@ footer .footer__contacts_socials svg path {
   line-height: 26px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #002647;
+  color: #000;
 }
 
 .form_subscribe_block_text_description {
   font-size: 18px;
   line-height: 24px;
-  color: #002647;
+  color: #000;
   margin: 20px 0px 0px 0px;
 }
 
@@ -3235,7 +3233,7 @@ footer .footer__contacts_socials svg path {
   line-height: 26px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   padding: 30px 30px 0px 30px;
 }
@@ -3528,14 +3526,14 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
 }
 
 .quote_author_post {
   font-weight: 800;
   font-size: 14px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
   opacity: 0.6;
   margin: 5px 0px;
 }
@@ -3543,7 +3541,7 @@ footer .footer__contacts_socials svg path {
 .quote_author_position {
   font-size: 18px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
 }
 
 .content_width_gal {
@@ -3721,7 +3719,7 @@ footer .footer__contacts_socials svg path {
 .comments .form-textarea textarea {
   font-size: 16px;
   line-height: 26px;
-  color: #002647;
+  color: #000;
   padding: 40px 50px;
 }
 
@@ -3785,13 +3783,13 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
 }
 
 .comments_item_content_meta_date {
   font-size: 18px;
   line-height: 22px;
-  color: #002647;
+  color: #000;
   opacity: 0.7;
   padding: 0px 0px 0px 20px;
 }
@@ -3846,7 +3844,7 @@ footer .footer__contacts_socials svg path {
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
-  color: #002647;
+  color: #000;
   margin: 30px 0px 0px 0px;
 }
 
@@ -3872,14 +3870,14 @@ footer .footer__contacts_socials svg path {
   line-height: 26px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #002647;
+  color: #000;
 }
 
 .section__footer_form_subscribe .footer_form_subscribe_block_text_description {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: #002647;
+  color: #000;
   margin: 20px 0px 0px 0px;
 }
 
@@ -3897,11 +3895,6 @@ footer .footer__contacts_socials svg path {
           justify-content: center;
 }
 
-.show__more:hover span {
-  text-decoration: underline;
-  color: #2d5698;
-}
-
 .show__more_btn {
   cursor: pointer;
 }
@@ -3912,7 +3905,12 @@ footer .footer__contacts_socials svg path {
   line-height: 24px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #002647;
+  color: #000;
+}
+
+.show__more_btn:hover span {
+  text-decoration: underline;
+  color: #000;
 }
 
 @media (max-width: 1182px) {
