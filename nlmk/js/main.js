@@ -506,22 +506,6 @@ if($('.other_posts_slider').length>0){
 		}]
 	});
 }
-
- $('.news__list').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.news__nav_list'
-});
-$('.news__nav_list').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  asNavFor: '.news__list',
-  arrows: false,
-  focusOnSelect: true
-});
-
 });
 //FORMS
 function forms(){
