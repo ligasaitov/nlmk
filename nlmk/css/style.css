@@ -174,7 +174,7 @@ h2 {
   line-height: 22px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #2d5698;
+  color: #000;
 }
 
 .form-row {
@@ -1791,14 +1791,14 @@ body.ie .ibg img {
 }
 
 footer {
-  background: #2d5698;
+  background: #eaeaf2;
   padding: 30px 0px;
 }
 
 footer .footer_policy a {
   font-size: 12px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #000;
   position: relative;
 }
 
@@ -1810,7 +1810,7 @@ footer .footer_policy a:after {
   content: '';
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #000;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -1853,7 +1853,7 @@ footer .footer__logo svg {
 }
 
 footer .footer__logo svg path {
-  fill: #fff;
+  fill: #000;
 }
 
 footer .footer__logo a {
@@ -1870,7 +1870,7 @@ footer .footer__logo a {
   line-height: 24px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000;
 }
 
 footer .footer__contacts {
@@ -1897,7 +1897,7 @@ footer .footer__contacts a {
   margin: 0px 10px;
   font-size: 14px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #000;
 }
 
 footer .footer__contacts_phone a:hover {
@@ -1911,7 +1911,7 @@ footer .footer__contacts_phone svg {
 }
 
 footer .footer__contacts_phone svg path {
-  fill: #fff;
+  fill: #000;
 }
 
 footer .footer__contacts_email a:hover {
@@ -1925,7 +1925,7 @@ footer .footer__contacts_email svg {
 }
 
 footer .footer__contacts_email svg path {
-  fill: #fff;
+  fill: #000;
 }
 
 footer .footer__contacts_socials {
@@ -1944,7 +1944,7 @@ footer .footer__contacts_socials a:hover svg path {
 }
 
 footer .footer__contacts_socials svg path {
-  fill: #fff;
+  fill: #000;
   opacity: 0.6;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
